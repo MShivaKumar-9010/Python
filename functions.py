@@ -90,7 +90,6 @@ wish("shiva")
 
 
 # Create a function that takes two numbers and prints their sum.
-
 def add(a,b):
     print(a+b)
 add(2,3)
