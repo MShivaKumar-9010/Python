@@ -1,217 +1,246 @@
-#Comparison Operators (==, !=, >, <, >=, <=)
 
-#Rahul scored 78 marks. The passing mark is 35.
- #Write a Python expression to check whether Rahul passed.
-scoredmarks=78
-passmarks=35
-print(scoredmarks>=passmarks)
+# Comparison Operators
 
-
-#Q2.
-#A movie ticket is allowed only for people aged 18 or above.
- #A person's age is 16.
-# Write an expression to check if they are eligible.
-age=16
-print(age>=18)
+# Q1: Rahul scored 78 marks. The passing mark is 35. Write a Python expression to check whether Rahul passed.
+rahul_marks = 78
+pass_marks = 35
+passed = rahul_marks >= pass_marks
+print(passed)
+# OUTPUT: True (Rahul passed)
 
 
-#A laptop costs ₹55,000.
- #Your budget is ₹60,000.
- #Check whether the laptop is within your budget.
-laptop=55000
-budget=60000
-print(budget>=laptop)
+# Q2: A movie ticket is allowed only for people aged 18 or above. A person's age is 16. Check eligibility.
+age = 16
+age_eligible = age >= 18
+print(age_eligible)
+# OUTPUT: False (Not eligible)
 
 
-#There are 25 students in Class A and 25 students in Class B.
-# Write an expression to check whether both classes have the same number of students.
-classA=25
-classB=25
-print(classA==classB)
+# Q3: A laptop costs ₹55,000. Your budget is ₹60,000. Check whether the laptop is within your budget.
+laptop_cost = 55000
+budget = 60000
+within_budget = laptop_cost <= budget
+print(within_budget)
+# OUTPUT: True (Yes, he can buy the laptop)
 
 
-#The temperature today is 42°C.
-# Check whether the temperature is greater than 40°C.
-temp=42
-print(temp>=40)
+# Q4: There are 25 students in Class A and 25 students in Class B. Check whether both classes have the same number of students.
+class_A = 25
+class_B = 25
+students = class_A == class_B
+print(students)
+# OUTPUT: True
 
 
-#A customer entered the correct OTP 5678.
- #The entered OTP is 6789.
-# Write an expression to check whether the OTP is incorrect.
-correctOTP=5678
-enteredOTP=6789
-print(correctOTP==enteredOTP)
-
-#The speed limit is 80 km/h.
-# A car is moving at 80 km/h.
- #Check whether the car is following the speed limit.
-speedlimit=80
-movingcar=80
-print(speedlimit==movingcar)
+# Q5: The temperature today is 42°C. Check whether the temperature is greater than 40°C.
+today_temp = 42
+given_temp = 40
+whether = today_temp > given_temp
+print(whether)
+# OUTPUT: True
 
 
-#A train has 150 seats.
- #Currently, 145 seats are booked.
-# Check whether all seats are filled.
-seats=150
-booked_seats=145
-print(seats==booked_seats)
-
-#The minimum balance required in a bank account is ₹1000.
- #Current balance is ₹850.
-# Check whether the balance is less than the required amount.
-min_bal=1000
-curr_bal=850
-print(curr_bal<min_bal)
+# Q6: A customer entered the correct OTP 5678. The entered OTP is 6789. Check whether the OTP is incorrect.
+correct_otp = 5678
+entered_otp = 6789
+customer_otp = correct_otp != entered_otp
+print(customer_otp)
+# OUTPUT: True (Incorrect OTP)
 
 
-#A student needs at least 75% attendance.
- #Current attendance is 75%.
-# Check whether the student is eligible for the exam.
-min_att=75
-curr_att=75
-print(min_att==curr_att)
+# Q7: The speed limit is 80 km/h. A car is moving at 80 km/h. Check whether the car is following the speed limit.
+speed_limit = 80
+car_speed = 80
+following_limit = car_speed <= speed_limit
+print(following_limit)
+# OUTPUT: True
 
 
-#Logical Operators (and, or, not)
-
-#A student can attend the placement drive only if:
-#CGPA is 7.5 or above
-#Attendance is 75% or above
-#Current CGPA = 8.1
-#Attendance = 82%
-curr_CGPA=8.1
-att=82
-print(curr_CGPA>=7.5 and att>=75)
+# Q8: A train has 150 seats. Currently, 145 seats are booked. Check whether all seats are filled.
+train_seats = 150
+booked_seats = 145
+all_seats = train_seats == booked_seats
+print(all_seats)
+# OUTPUT: False
 
 
-#A customer gets free delivery if:Purchase amount is above ₹500Customer is a Prime member Purchase = ₹650Prime Member = TrueWrite the condition.
-purs_amt=650
-prime_no=True
-print(purs_amt>=500 and prime_no is True)
+# Q9: The minimum balance required is ₹1000. Current balance is ₹850. Check whether balance is less than the required amount.
+min_balance = 1000
+current_balance = 850
+required_amount = current_balance < min_balance
+print(required_amount)
+# OUTPUT: True
 
 
-#A website allows login if:
-#Username is correct OR
-#Email is correct
-#Username Correct = False
-#Email Correct = True
-#Write the condition.
-user_name=False
-email_correct=True
-print(user_name is True or email_correct is True)
-
-#A cricket player is selected if:
-#Runs > 500
-#Wickets > 20
-#Runs = 620
-#Wickets = 18
-#Write the condition.
-runs=620
-wickets=18
-print(runs>500 and wickets>20)
+# Q10: A student needs at least 75% attendance. Current attendance is 75%. Check eligibility.
+min_attendance = 75
+current_attendance = 75
+student_attend = current_attendance >= min_attendance
+print(student_attend)
+# OUTPUT: True (Eligible)
 
 
-#A student passes only if:
-#Theory marks ≥ 35
-#Practical marks ≥ 35
-#Theory = 40
-#Practical = 30
-#Write the condition.
-theory_marks=40
-pract_marks=30
-print(theory_marks>=35 and pract_marks>=35)
 
-#A shop offers a discount if:
-#Customer is a member
-#OR total purchase exceeds ₹2000
-#Member = False
-#Purchase = ₹2500
-#Write the condition.
-mem=False
-purs=2500
-print(mem is True or purs>=2000)
+# Logical Operators
 
 
-#A person can vote if:
-#Age is 18 or above
-#AND is an Indian citizen
-#Age = 20
-#Citizen = True
-#Write the condition.
-age=20
-citiz=True
-print(age>=18 and citiz is True)
+# Q11: A student can attend the placement drive only if CGPA >= 7.5 and Attendance >= 75%.
+cgpa = 8.1
+attendance = 82
+eligible = cgpa >= 7.5 and attendance >= 75
+print(eligible)
+# OUTPUT: True
 
 
-#A student is not absent.
-#Absent = False
-#Write a Python expression using the not operator to check whether the student is present.
-absent=False
-print(not(absent))
-
-#A system grants admin access only if:Username is "admin" Password is correct Username = "admin" Password Correct = True Write the condition.
-user_name="admin"
-password_crt=True
-print(user_name is "admin" and password_crt is True)
+# Q12: Free delivery if Purchase > ₹500 and Prime Member.
+purchase = 650
+prime_member = True
+free_delivery = purchase > 500 and prime_member
+print(free_delivery)
+# OUTPUT: True
 
 
-#A person can enter a swimming pool if:They have a membership OR they pay the entry fee Membership = False  Paid Fee = False 
-Membership=False
-entry_fee=False
-print(Membership is True or entry_fee is True)
+# Q13: Login allowed if Username is correct OR Email is correct.
+username_correct = False
+email_correct = True
+login_allowed = username_correct or email_correct
+print(login_allowed)
+# OUTPUT: True
 
 
-#Mixed Comparison + Logical Operators
+# Q14: Cricket player selected if Runs > 500 and Wickets > 20.
+runs = 620
+wickets = 18
+selected = runs > 500 and wickets > 20
+print(selected)
+# OUTPUT: False (Player not selected)
 
-#A student gets Grade A if: Marks are between 90 and 100 (inclusive).Marks = 95 Write the condition.
+
+# Q15: Student passes only if Theory >= 35 and Practical >= 35.
+theory = 40
+practical = 30
+student_pass = theory >= 35 and practical >= 35
+print(student_pass)
+# OUTPUT: False (Student fails)
+
+
+# Q16: Discount if Member OR Purchase > ₹2000.
+member = False
+purchase = 2500
+discount = member or purchase > 2000
+print(discount)
+# OUTPUT: True
+
+
+# Q17: A person can vote if Age >= 18 and Citizen.
+age = 20
+citizen = True
+can_vote = age >= 18 and citizen
+print(can_vote)
+# OUTPUT: True
+
+
+# Q18: Student is not absent.
+absent = False
+present = not absent
+print(present)
+# OUTPUT: True
+
+
+# Q19: Admin access if Username is "admin" and Password is correct.
+username = "admin"
+password_correct = True
+admin_access = username == "admin" and password_correct
+print(admin_access)
+# OUTPUT: True
+
+
+# Q20: Swimming pool entry if Membership OR Paid Fee.
+membership = False
+paid_fee = False
+can_enter = membership or paid_fee
+print(can_enter)
+# OUTPUT: False
+
+
+# ==========================
+# Mixed Comparison + Logical Operators
+# ==========================
+
+# Q21: Grade A if Marks are between 90 and 100 (inclusive).
 marks = 95
-marks>90 and marks>100
-print("grade-a")
-
-#A customer is eligible for cashback if:Purchase ≥ ₹1000 AND purchase ≤ ₹5000 Purchase = ₹3200 Write the condition.
-purs=3200
-print(purs>=1000 and purs<=5000)
+grade_A = marks >= 90 and marks <= 100
+print(grade_A)
+# OUTPUT: True
 
 
-#A user can reset their password if:OTP is correct AND account is active OTP Correct = True Account Active = True Write the condition.
-otp=True
-acc_active=True
-print(otp is True and acc_active is True)
-
-#A player qualifies if:Age is between 18 and 25 (inclusive).Age = 23 Write the condition.
-age=23
-print(age>=18 and age<=24)
+# Q22: Cashback if Purchase >= ₹1000 and Purchase <= ₹5000.
+purchase = 3200
+cashback = purchase >= 1000 and purchase <= 5000
+print(cashback)
+# OUTPUT: True
 
 
-#A vehicle is fined if:Speed > 80 km/h OR signal is broken Speed = 75 Signal Broken = True Write the condition.
-speed=75
-signal_broken=True
-print(speed>80 or signal_broken is False)
+# Q23: Password reset if OTP is correct and Account is active.
+otp_correct = True
+account_active = True
+reset_password = otp_correct and account_active
+print(reset_password)
+# OUTPUT: True
 
 
-#Write a condition to check whether a number is between 10 and 50 (inclusive).
-number=25
-print(number>=10 and number<=50)
+# Q24: Player qualifies if Age is between 18 and 25 (inclusive).
+age = 23
+player_qualifies = age >= 18 and age <= 25
+print(player_qualifies)
+# OUTPUT: True
 
 
-#Write a condition to check whether a person is either a student or a teacher.
-name=input("student or teacher:")
-print(name=="student" or name=="teacher")
+# Q25: Vehicle fined if Speed > 80 OR Signal Broken.
+speed = 75
+signal_broken = True
+fine = speed > 80 or signal_broken
+print(fine)
+# OUTPUT: True
 
 
-#Write a condition to check whether a password length is at least 8 characters and contains at least one digit.
-password=input("enter your password:")
-print((len(password)>= 8)and (len(password)>=0))
+# ==========================
+# Challenge Questions
+# ==========================
 
-#Write a condition to check whether a person's age is not less than 18.
-print(age>=18)
+# Q26: Check whether a number is between 10 and 50 (inclusive).
+num = 35
+condition = num >= 10 and num <= 50
+print(condition)
+# OUTPUT: True
 
 
-#A customer gets a gift only if:Purchase amount is greater than ₹5000AND customer is a premium memberAND today is their birthdayWrite the condition using logical 
-amount=6500
-customer=True
-birthday=True
-print(bool(amount>5000 and customer==True and birthday==True))
+# Q27: Check whether a person is either a student or a teacher.
+is_student = True
+is_teacher = False
+person = is_student or is_teacher
+print(person)
+# OUTPUT: True
 
+
+# Q28: Check whether a password length is at least 8 characters and contains at least one digit.
+password = "Python123"
+condition = len(password) >= 8 and any(char.isdigit() for char in password)
+print(condition)
+# OUTPUT: True
+
+
+# Q29: Check whether a person's age is not less than 18.
+age = 18
+condition = age >= 18
+print(condition)
+# OUTPUT: True
+
+
+# Q30: Customer gets a gift if Purchase > ₹5000 AND Premium Member AND Birthday.
+purchase = 6000
+premium_member = True
+birthday = True
+gift = purchase > 5000 and premium_member and birthday
+print(gift)
+# OUTPUT: True
