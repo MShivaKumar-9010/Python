@@ -5,7 +5,7 @@
 #Submit your Python script as a .py file.
 
 def calculated_area(radius):
-    x=3.14*radius**2 #pi value is 3.14
+    x=3.14*radius**2  #pi value is 3.14
     print("area of circle:",x)
 # calculated_area(5)
 
